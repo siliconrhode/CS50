@@ -12,12 +12,14 @@ int main(void)
          change_float =get_float();
     }
     while (change_float < 0);
-    change_integer = change_float * 100;
+    change_integer = change_float * 100 + 0.005;
     
     if (change_integer >= 25)
     {
         coins = change_integer / 25;
         change_integer = (change_integer % 25);
+        printf("%i\n", coins);
+        printf("%i\n", change_integer);
     }    
     if (change_integer >= 10)
     {
@@ -36,7 +38,7 @@ int main(void)
     }
                
    
-    printf("coins = %i", coins);
+    printf("%i\n", coins);
 
     
     
