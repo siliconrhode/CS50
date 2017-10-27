@@ -40,5 +40,5 @@ int main(void)
     {
         coins = coins + change_integer;
     }
-    printf("%i\n", coins);
+    printf("coins inaccurate value%i\n", coins);
 }
