@@ -17,7 +17,7 @@ int main(void)
     //check how a float value is stored looking for a bug reducing total by one coin (debugging)
     //print how the value get stored in a float variable after user input
     printf("The exact value  stored as a float variable after user input = %.10f \n", change_float);
-    change_integer = change_float * 100;
+    change_integer = change_float * 100 + 0.005;
     //note how float imprecision result in a loss of one sent in case of test case"$4.20"
     printf("The integer value stored: %i\n", change_integer);
     //always give change based on the biggest coin, least coins possilbe
