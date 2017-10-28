@@ -41,5 +41,5 @@ int main(void)
     {
         coins = coins + change_integer;
     }
-    printf(" %i\n", coins);
+    printf("%i\n", coins);
 }
