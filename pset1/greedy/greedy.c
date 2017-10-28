@@ -10,16 +10,17 @@ int main(void)
     //prompt user for a positive input
     do
     {
-        printf("0 hai! How much change is owed?");
+        printf("0 hai! How much change is owed?\n");
         change_float = get_float();
     }
     while (change_float < 0);
     //check how a float value is stored looking for a bug reducing total by one coin (debugging)
     //print how the value get stored in a float variable after user input
-    printf("The exact value  stored as a float variable after user input = %.10f \n", change_float);
+    //printf("The exact value  stored as a float variable after user input = %.10f \n", change_float);
+    // add 0.005 to compensate for imprecision
     change_integer = change_float * 100 + 0.005;
     //note how float imprecision result in a loss of one sent in case of test case"$4.20"
-    printf("The integer value stored: %i\n", change_integer);
+    //printf("The integer value stored: %i\n", change_integer);
     //always give change based on the biggest coin, least coins possilbe
     if (change_integer >= 25)
     {
@@ -40,5 +41,5 @@ int main(void)
     {
         coins = coins + change_integer;
     }
-    printf("coins inaccurate value: %i\n", coins);
+    printf(" %i\n", coins);
 }
