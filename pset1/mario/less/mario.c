@@ -13,8 +13,8 @@ int main (void)
     //pyramid builder start with two blocks (i=2)
     for (int i = 2; i < height + 2; i++)
     {
-        //Space builder note the (+1) will give it the right-- 
-        //shape,more visible with bottom leayer. 
+        //Space builder note the (+1) will give it the right--
+        //shape,more visible with bottom leayer.
         int spaces = height - i + 1;
         for (int c = 0; c < spaces; c++)
         {
